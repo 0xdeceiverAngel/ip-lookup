@@ -1,0 +1,13 @@
+{
+  "name": "dcard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "jade":"~1.11.0",
+    "express": "~4.16.0",
+    "request": "~2.88.2"
+  }
+}
