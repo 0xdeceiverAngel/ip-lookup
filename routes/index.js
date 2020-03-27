@@ -11,7 +11,6 @@ router.get('/', function (req, res) {
   request({
     url: `http://api.ipstack.com/${ip}?access_key=82a4433442709cade29d923962fa16d8`,
     method: "GET",
-    timeout: 10000,
     followRedirect: true,
     maxRedirects: 10
   }, function (error, response, body) {
