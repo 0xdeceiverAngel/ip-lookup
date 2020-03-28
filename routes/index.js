@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function (req, res) {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   if (ip[0] = ':' && ip[1] == ':') {
-    ip = ip.slice(7, ip.length);// 有點問題 
+    ip = ip.slice(7, ip.length);// 有點問題
   }
   console.log(ip);
   request({
