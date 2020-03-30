@@ -1,10 +1,6 @@
-## ip lookup
-- 用第三方api取得ip資訊和把ip經緯度標在地圖上
-- 可以打包成docker image
-- github action 配合 docker compose 自動部屬
+# 測試
 ```
-cd ip-lookup
-docker build -t lookup .
-docker run lookup
+測試掛載
+早上 測試時還活著
+設定沒改 然後重新build 他就死掉了 一下子缺requset 一下缺express 
 ```
-visit 127.0.0.1:5000
