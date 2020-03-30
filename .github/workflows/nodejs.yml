@@ -14,5 +14,9 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd ~/ip-looker
-          git fetch
+          cd /home/u/ip-lookup/
+          docker-compose stop 
+          git remote set-url origin https://github.com/0xdeciverAngel/ip-lookup.git
+          git clean -d -fx
+          git reset @^ --hard && git pull
+          docker-compose up -d
