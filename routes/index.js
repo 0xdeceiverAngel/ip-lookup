@@ -16,7 +16,7 @@ router.get('/', function (req, res) {
   }, function (error, response, body) {
     console.log(body);
     body = JSON.parse(body);
-    res.render('sample', {
+    res.render('test', {
       ip: body['ip'],
       latitude: body['latitude'],
       longitude: body['longitude'],
